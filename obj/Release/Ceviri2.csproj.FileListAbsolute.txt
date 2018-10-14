@@ -1,0 +1,14 @@
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\bin\Release\Ceviri2.exe.config
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\bin\Release\Ceviri2.exe
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\bin\Release\Ceviri2.pdb
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\bin\Release\Bunifu_UI_v1.5.3.dll
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.Properties.Resources.resources
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.csproj.GenerateResource.cache
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.csproj.CoreCompileInputs.cache
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.csproj.CopyComplete
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.exe
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.pdb
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.csprojResolveAssemblyReference.cache
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.Çeviri.resources
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\bin\Release\Newtonsoft.Json.dll
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.sonsuzayar.resources
