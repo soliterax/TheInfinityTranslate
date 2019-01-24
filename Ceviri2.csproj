@@ -35,8 +35,9 @@
     <ApplicationIcon>Dictionary.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Desktop\kodlama\Bunifu_UI_v1.5.3.dll</HintPath>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\coding\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -57,11 +58,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackColorDialog.Designer.cs">
+      <DependentUpon>BackColorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="colorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="colorDialog.Designer.cs">
+      <DependentUpon>colorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomDesign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomDesign.Designer.cs">
+      <DependentUpon>CustomDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="homepage.Designer.cs">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INIFile.cs" />
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
     <Compile Include="sonsuzayar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="sonsuzayar.Designer.cs">
       <DependentUpon>sonsuzayar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Form.Designer.cs">
+      <DependentUpon>Update_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yapimcilar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="yapimcilar.Designer.cs">
+      <DependentUpon>yapimcilar.cs</DependentUpon>
     </Compile>
     <Compile Include="Çeviri.cs">
       <SubType>Form</SubType>
@@ -71,8 +115,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BackColorDialog.resx">
+      <DependentUpon>BackColorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="colorDialog.resx">
+      <DependentUpon>colorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomDesign.resx">
+      <DependentUpon>CustomDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homepage.resx">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sonsuzayar.resx">
       <DependentUpon>sonsuzayar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Form.resx">
+      <DependentUpon>Update_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yapimcilar.resx">
+      <DependentUpon>yapimcilar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Çeviri.resx">
       <DependentUpon>Çeviri.cs</DependentUpon>
@@ -107,6 +172,25 @@
     <Content Include="Dictionary.ico" />
     <None Include="Resources\images.png" />
     <None Include="Resources\Dictionary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
