@@ -18,7 +18,7 @@ namespace Ceviri2
 			InitializeComponent();
 		}
 		INIFile ini = new INIFile(Environment.CurrentDirectory + "/" + "settings.ini");
-		INIFile ene = new INIFile(Environment.CurrentDirectory + "/" + "background.ini");
+		INIRead read = new INIRead();
 		public string VERSION = "V2.2", text = "Sonsuz Çeviri";
 
 		public bool olay = true;
@@ -46,9 +46,43 @@ namespace Ceviri2
 		private static System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Çeviri));
 
 		public void Form1_Load(object sender, EventArgs e)
-		{
-			
-			
+		{ 
+			if (!File.Exists(Environment.CurrentDirectory + "/background.ini"))
+			{
+
+				read.allset();
+
+			} else
+			{
+
+				Header.BackColor = al("upMenu");
+				sideMenu.BackColor = al("sideMenu");
+				bunifuCustomLabel1.ForeColor = al("textColor");
+				bunifuCustomLabel1.BackColor = al("textBackColor");
+				bunifuCustomLabel2.ForeColor = al("textColor");
+				bunifuCustomLabel2.BackColor = al("textBackColor");
+				bunifuCustomLabel3.ForeColor = al("textColor");
+				bunifuCustomLabel3.BackColor = al("textBackColor");
+				bunifuCustomLabel4.ForeColor = al("textColor");
+				bunifuCustomLabel4.BackColor = al("textBackColor");
+				bunifuFlatButton1.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton1.Activecolor = al("sideButtonActiveColor");
+				bunifuFlatButton1.OnHovercolor = al("sideButtonHoverColor");
+				bunifuFlatButton1.Textcolor = al("buttonColor");
+				bunifuFlatButton2.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton2.Activecolor = al("sideButtonActiveColor");
+				bunifuFlatButton2.OnHovercolor = al("sideButtonHoverColor");
+				bunifuFlatButton2.Textcolor = al("buttonColor");
+				bunifuFlatButton3.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton3.Activecolor = al("sideButtonActiveColor");
+				bunifuFlatButton3.OnHovercolor = al("sideButtonHoverColor");
+				bunifuFlatButton3.Textcolor = al("buttonColor");
+				label4.ForeColor = al("textColor");
+				label4.BackColor = al("textBackColor");
+				label5.ForeColor = al("textColor");
+				label5.BackColor = al("textBackColor");
+				panel2.BackColor = al("centerMenu");
+			}
 			trayMenu = new ContextMenu();
 			trayIcon = new NotifyIcon();
 			trayIcon.Text = "Sonsuz Çeviri™ - Made by bombacan";
@@ -57,6 +91,7 @@ namespace Ceviri2
 			trayIcon.ContextMenu = trayMenu;
 			trayIcon.Visible = true;
 			trayMenu.MenuItems.Add("Programı Kapat", programıKapatToolStripMenuItem_Click);
+			
 
 			if (language().Contains("turkish"))
 			{
@@ -70,7 +105,7 @@ namespace Ceviri2
 				bunifuCustomLabel3.Text = "Sonsuz Çeviriye Hoşgeldiniz";
 				bunifuCustomLabel4.Text = " Yapımcı Umut " + Environment.NewLine + " Sonsuz Çeviri " + VERSION;
 				pictureBox1.Visible = true;
-				
+
 
 			}
 			else if (language().Contains("english"))
@@ -83,7 +118,7 @@ namespace Ceviri2
 				bunifuCustomLabel2.Text = "Language: English";
 				menulabel.Text = "MENU";
 				bunifuCustomLabel3.Text = "Welcome To Infinite Translation";
-				bunifuCustomLabel4.Text = " Developer Umut "+ Environment.NewLine +" The Infinity Translate " + VERSION;
+				bunifuCustomLabel4.Text = " Developer Umut " + Environment.NewLine + " The Infinity Translate " + VERSION;
 				pictureBox1.Visible = false;
 
 			}
@@ -112,21 +147,18 @@ namespace Ceviri2
 				menulabel.Text = "MENU";
 				bunifuCustomLabel3.Text = "Sonsuz Çeviriye Hoşgeldiniz";
 				bunifuCustomLabel4.Text = " Yapımcı Umut " + Environment.NewLine + " Sonsuz Çeviri " + VERSION;
-				homepage1.BackColor = ColorTranslator.FromHtml("#252E3B");
-				panel2.BackColor = ColorTranslator.FromHtml("#252E3B");
-				sonsuzayar1.BackColor = ColorTranslator.FromHtml("#252E3B");
-				sideMenu.BackColor = ColorTranslator.FromHtml("#1A2028");
-				Header.BackColor = ColorTranslator.FromHtml("#9E9E9E");
-				bunifuFlatButton1.Textcolor = Color.White;
-				bunifuFlatButton2.Textcolor = Color.White;
-				bunifuFlatButton3.Textcolor = Color.White;
 
 			}
-			Header.BackColor = ColorTranslator.FromHtml(ene.Read("APP", "upMenu"));
-			sideMenu.BackColor = ColorTranslator.FromHtml(ene.Read("APP", "sideMenu"));
-			sonsuzayar1.BackColor = ColorTranslator.FromHtml(ene.Read("APP", "sideMenu"));
 
 		}
+
+		public Color al(string value)
+		{
+
+			return ColorTranslator.FromHtml(read.getini(value));
+
+		}
+
 		public void bunifuImageButton2_Click(object sender, EventArgs e)
 		{
 			   if (sideMenu.Width == 45)
@@ -191,12 +223,12 @@ namespace Ceviri2
 			new Thread(() =>
 			{
 				Thread.CurrentThread.Name = "Anasayfa Thread";
-				bunifuFlatButton3.Normalcolor = Color.Transparent;
-				bunifuFlatButton3.Iconcolor = Color.Transparent;
-				bunifuFlatButton2.Normalcolor = Color.Transparent;
-				bunifuFlatButton2.Iconcolor = Color.Transparent;
-				bunifuFlatButton1.Normalcolor = Color.DarkBlue;
-				bunifuFlatButton1.Iconcolor = Color.DarkBlue;
+				bunifuFlatButton3.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton3.Iconcolor = al("buttonBackColor");
+				bunifuFlatButton2.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton2.Iconcolor = al("buttonBackColor");
+				bunifuFlatButton1.Normalcolor = al("sideButtonActiveColor");
+				bunifuFlatButton1.Iconcolor = al("sideButtonActiveColor");
 			}).Start();
 			
 				
@@ -218,12 +250,12 @@ namespace Ceviri2
 			new Thread(() =>
 			{
 				Thread.CurrentThread.Name = "Yapımcılar Thread";
-				bunifuFlatButton3.Normalcolor = Color.Transparent;
-				bunifuFlatButton3.Iconcolor = Color.Transparent;
-				bunifuFlatButton2.Normalcolor = Color.DarkBlue;
-				bunifuFlatButton2.Iconcolor = Color.DarkBlue;
-				bunifuFlatButton1.Normalcolor = Color.Transparent;
-				bunifuFlatButton1.Iconcolor = Color.Transparent;
+				bunifuFlatButton3.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton3.Iconcolor = al("buttonBackColor");
+				bunifuFlatButton2.Normalcolor = al("sideButtonActiveColor");
+				bunifuFlatButton2.Iconcolor = al("sideButtonActiveColor");
+				bunifuFlatButton1.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton1.Iconcolor = al("buttonBackColor");
 			}).Start();
 
 			homepage1.Visible = false;
@@ -241,23 +273,22 @@ namespace Ceviri2
 
 		public void bunifuFlatButton3_Click(object sender, EventArgs e)
 		{
-
+			new Thread(() =>
+			{
+				Thread.CurrentThread.Name = "Ayarlar Thread";
+				bunifuFlatButton3.Normalcolor = al("sideButtonActiveColor");
+				bunifuFlatButton3.Iconcolor = al("sideButtonActiveColor");
+				bunifuFlatButton2.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton2.Iconcolor = al("buttonBackColor");
+				bunifuFlatButton1.Normalcolor = al("buttonBackColor");
+				bunifuFlatButton1.Iconcolor = al("buttonBackColor");
+			}).Start();
 			sonsuzayar1.Visible = true;
 			yapimcilar1.Visible = false;
 			homepage1.Visible = false;
 			if (language().Contains("turkish")) { bunifuCustomLabel1.Text = "Sonsuz Çeviri " + VERSION + " | Ayarlar"; }
 			else if (language().Contains("english")) { bunifuCustomLabel1.Text = "Infinity Translate " + VERSION + " | Settings"; }
 			else if (language().Contains("arapca")) { bunifuCustomLabel1.Text = "لانهائية الترجمة " + VERSION + " | الإعدادات"; }
-			new Thread(() =>
-			{
-				Thread.CurrentThread.Name = "ayarlar Thread";
-				bunifuFlatButton3.Normalcolor = Color.DarkBlue;
-				bunifuFlatButton3.Iconcolor = Color.DarkBlue;
-				bunifuFlatButton2.Normalcolor = Color.Transparent;
-				bunifuFlatButton2.Iconcolor = Color.Transparent;
-				bunifuFlatButton1.Normalcolor = Color.Transparent;
-				bunifuFlatButton1.Iconcolor = Color.Transparent;
-			}).Start();
 		}
 
 		private void programıKapatToolStripMenuItem_Click(object sender, EventArgs e)
@@ -300,14 +331,11 @@ namespace Ceviri2
 
 		}
 
-		
-
 		public void refresh()
 		{
 
-			CustomDesign ayar = new CustomDesign();
-			ayar.Hide();
-			ayar.Visible = true;
+			this.Hide();
+			this.Visible = true;
 
 		}
 

@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+			BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Çeviri));
 			this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
 			this.sideMenu = new System.Windows.Forms.Panel();
@@ -52,7 +52,6 @@
 			this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
 			this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.customDesign1 = new Ceviri2.CustomDesign();
 			this.yapimcilar1 = new Ceviri2.yapimcilar();
 			this.homepage1 = new Ceviri2.homepage();
 			this.sonsuzayar1 = new Ceviri2.sonsuzayar();
@@ -382,7 +381,6 @@
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-			this.panel2.Controls.Add(this.customDesign1);
 			this.panel2.Controls.Add(this.yapimcilar1);
 			this.panel2.Controls.Add(this.homepage1);
 			this.panel2.Controls.Add(this.sonsuzayar1);
@@ -397,14 +395,6 @@
 			this.panel2.Size = new System.Drawing.Size(588, 422);
 			this.panel2.TabIndex = 2;
 			this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-			// 
-			// customDesign1
-			// 
-			this.panelAnimator.SetDecoration(this.customDesign1, BunifuAnimatorNS.DecorationType.None);
-			this.customDesign1.Location = new System.Drawing.Point(-3, 0);
-			this.customDesign1.Name = "customDesign1";
-			this.customDesign1.Size = new System.Drawing.Size(588, 422);
-			this.customDesign1.TabIndex = 16;
 			// 
 			// yapimcilar1
 			// 
@@ -430,7 +420,6 @@
 			// 
 			// sonsuzayar1
 			// 
-			this.sonsuzayar1.BackColor = System.Drawing.Color.Transparent;
 			this.panelAnimator.SetDecoration(this.sonsuzayar1, BunifuAnimatorNS.DecorationType.None);
 			this.sonsuzayar1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.sonsuzayar1.Location = new System.Drawing.Point(0, 0);
@@ -496,22 +485,22 @@
 			// 
 			this.panelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
 			this.panelAnimator.Cursor = null;
-			animation2.AnimateOnlyDifferences = true;
-			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-			animation2.LeafCoeff = 0F;
-			animation2.MaxTime = 1F;
-			animation2.MinTime = 0F;
-			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-			animation2.MosaicSize = 0;
-			animation2.Padding = new System.Windows.Forms.Padding(0);
-			animation2.RotateCoeff = 0F;
-			animation2.RotateLimit = 0F;
-			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-			animation2.TimeCoeff = 0F;
-			animation2.TransparencyCoeff = 0F;
-			this.panelAnimator.DefaultAnimation = animation2;
+			animation1.AnimateOnlyDifferences = true;
+			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+			animation1.LeafCoeff = 0F;
+			animation1.MaxTime = 1F;
+			animation1.MinTime = 0F;
+			animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+			animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+			animation1.MosaicSize = 0;
+			animation1.Padding = new System.Windows.Forms.Padding(0);
+			animation1.RotateCoeff = 0F;
+			animation1.RotateLimit = 0F;
+			animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+			animation1.TimeCoeff = 0F;
+			animation1.TransparencyCoeff = 0F;
+			this.panelAnimator.DefaultAnimation = animation1;
 			// 
 			// Çeviri
 			// 
@@ -578,7 +567,6 @@
 		private homepage homepage1;
 		private yapimcilar yapimcilar1;
 		private System.Windows.Forms.PictureBox pictureBox1;
-		public CustomDesign customDesign1;
 	}
 }
 

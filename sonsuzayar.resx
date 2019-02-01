@@ -118,19 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuiOSSwitch1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAGQAAAA4CAYAAAALrl3YAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF2SURBVHhe7dFLjsMwEAPRHMT3v+bMIgUIgZn4J3WEuAi8
-        XUuW2Q9zgyzL8ncH/O6cSQ++E2r4ftLj7oxa6pMeo4aaapIeoDXqGpf0UW2jvr5JH9J+1Ngn6QM6jjqv
-        JV2s86j1XNKFuo56jyddpuuo91jSReqHmvclXaD+qHs76bD6o+7PSQc1DrW/Tzqkcag9Jx3QeNS/ThrW
-        eNT/mjSoGqzgNWlQdVhDSxpSHdbQkoZUhzW0pCHVYQ3PpAHVYhXPpAHVYx0uZBasw4XMgnW4kFmwDhcy
-        C9bhQmbBOlzIDFhFSxpSHdbQkoZUhzW0pCHVYQ0taUh1WENLGlINVrBOGtZ41L9OGtZ41J+TDmgcan+f
-        dEjjUPvnpIPqj7q3kw6rP+rel3SB+qHmY0kX6TrqPZ50ma6j3nNJF+o8ar2WdLGOo84+SR/QftTYN+lD
-        2kZ945I+qjXqqkl6gBpqqk96zJ1Ry/eTHncn1DBn0oN/Eb9rfjePxz8yHDwNiCK+sQAAAABJRU5ErkJg
-        gg==
-</value>
-  </data>
   <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAABadJREFUaEPt

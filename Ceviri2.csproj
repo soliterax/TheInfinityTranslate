@@ -30,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Dictionary.ico</ApplicationIcon>
@@ -58,23 +59,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackColorDialog.cs">
+    <Compile Include="Custom Design.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BackColorDialog.Designer.cs">
-      <DependentUpon>BackColorDialog.cs</DependentUpon>
+    <Compile Include="Custom Design.Designer.cs">
+      <DependentUpon>Custom Design.cs</DependentUpon>
     </Compile>
+    <Compile Include="INIRead.cs" />
     <Compile Include="colorDialog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="colorDialog.Designer.cs">
       <DependentUpon>colorDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CustomDesign.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CustomDesign.Designer.cs">
-      <DependentUpon>CustomDesign.cs</DependentUpon>
     </Compile>
     <Compile Include="homepage.cs">
       <SubType>UserControl</SubType>
@@ -83,6 +79,7 @@
       <DependentUpon>homepage.cs</DependentUpon>
     </Compile>
     <Compile Include="INIFile.cs" />
+    <Compile Include="LangRead.cs" />
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,14 +112,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BackColorDialog.resx">
-      <DependentUpon>BackColorDialog.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="colorDialog.resx">
       <DependentUpon>colorDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomDesign.resx">
-      <DependentUpon>CustomDesign.cs</DependentUpon>
+    <EmbeddedResource Include="Custom Design.resx">
+      <DependentUpon>Custom Design.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homepage.resx">
       <DependentUpon>homepage.cs</DependentUpon>

@@ -21,5 +21,5 @@ C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.homepage.resource
 C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\bin\Release\Bunifu_UI_v1.5.3.dll
 C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.yapimcilar.resources
 C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.csprojAssemblyReference.cache
-C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.CustomDesign.resources
 C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.colorDialog.resources
+C:\Users\UMUT\source\repos\Ceviri2\Ceviri2\obj\Release\Ceviri2.Custom_Design.resources

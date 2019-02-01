@@ -32,8 +32,8 @@
 			this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.bunifuiOSSwitch1 = new Bunifu.Framework.UI.BunifuiOSSwitch();
 			this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -68,21 +68,6 @@
 			this.label2.TabIndex = 5;
 			this.label2.Text = "الخلفية :";
 			// 
-			// bunifuiOSSwitch1
-			// 
-			this.bunifuiOSSwitch1.BackColor = System.Drawing.Color.Transparent;
-			this.bunifuiOSSwitch1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuiOSSwitch1.BackgroundImage")));
-			this.bunifuiOSSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.bunifuiOSSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.bunifuiOSSwitch1.Location = new System.Drawing.Point(233, 145);
-			this.bunifuiOSSwitch1.Name = "bunifuiOSSwitch1";
-			this.bunifuiOSSwitch1.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-			this.bunifuiOSSwitch1.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(116)))));
-			this.bunifuiOSSwitch1.Size = new System.Drawing.Size(35, 20);
-			this.bunifuiOSSwitch1.TabIndex = 4;
-			this.bunifuiOSSwitch1.Value = false;
-			this.bunifuiOSSwitch1.OnValueChange += new System.EventHandler(this.bunifuiOSSwitch1_OnValueChange);
-			// 
 			// bunifuImageButton1
 			// 
 			this.bunifuImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -98,13 +83,23 @@
 			this.bunifuImageButton1.Zoom = 10;
 			this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
 			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(234, 145);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 6;
+			this.button1.Text = "button1";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
 			// sonsuzayar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Transparent;
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.bunifuiOSSwitch1);
 			this.Controls.Add(this.bunifuImageButton1);
 			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.bunifuCustomLabel1);
@@ -123,6 +118,6 @@
 		private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
 		private System.Windows.Forms.Label label2;
 		public System.Windows.Forms.ComboBox comboBox1;
-		public Bunifu.Framework.UI.BunifuiOSSwitch bunifuiOSSwitch1;
+		private System.Windows.Forms.Button button1;
 	}
 }
